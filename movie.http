@@ -1,0 +1,36 @@
+
+get http://localhost:3000/movies/
+
+###
+post http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+  "directorId": 6,
+  "movieName": "Jurassic Park",
+  "leadActor": "Jeff Goldblum"
+}
+
+###
+get http://localhost:3000/movies/12/
+
+
+###
+put http://localhost:3000/movies/12/
+Content-Type: application/json
+
+{
+  "directorId": 24,
+  "movieName": "Thor",
+  "leadActor": "Christophe"
+}
+
+###
+delete http://localhost:3000/movies/12/
+
+
+###
+get http://localhost:3000/directors/
+
+###
+get http://localhost:3000/directors/2/movies/
